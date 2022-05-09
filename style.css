@@ -1,0 +1,119 @@
+/*Programado por Nicolas Tanure Miszczuk*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+/*font-family: 'Righteous', cursive;      RIGHTEOUS*/ 
+/*font-family: 'Sarala', sans-serif;      SARALA*/
+/*site importante: Css-tricks (flex)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    /*reset*/
+}
+body{
+    font-size:100%;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,46,189,1) 35%, rgba(0,212,255,1) 100%);
+/*reset*/
+}
+
+.cabecalho{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    
+}
+.cabecalho-imagem{
+    height: 72px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap:32px; /* espaçamento entre as frases */
+}
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2EF;
+    font-weight:400 ; /* negrito */
+    font-size: 18px;
+}
+.conteudo{
+    border-top: 0.4px solid #FFF2EF;/*linha que separa o cabeçalho do centro*/
+    margin-bottom: 48px;
+}
+.conteudo-principal{
+    display:flex;
+    flex-direction: row; /*row é linha, column é coluna */
+    align-items: center;
+    justify-content: space-around; /*separa as coisas de forma simétrica*/
+}
+.conteudo-principal-escrito{
+    display:flex;
+    flex-direction: column;
+    gap:32px; 
+}
+.conteudo-principal-escrito-titulo{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color:#FFF2EF
+}
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+.conteudo-principal-escrito-botao{
+    background-color: rgb(90, 153, 172);
+    width: 185px; /*largura*/
+    height: 67px; /*altura*/
+    border: none; /*borda vem pré configurada, esse comando remove ela */
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25); /*sombra do botão*/
+    border-radius: 20px; /*formato do botão */
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+.conteudo-principal-imagem{
+    height: 400px;
+}
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px; /* espaço de margem */
+}
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid #FFF2EF;
+    padding-top: 40px; /*separação apenas no topo*/
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2EF;
+    margin-bottom: 16px;
+}
+.conteudo-secundario-paragrafo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+.rodape{
+    padding: 32px; /*se não especificar top ou botton ele distancia em todos os lados*/
+    border-top: 0.4px solid #FFF2EF;
+}
+.rodape-imagem{
+    height: 60px;
+    display: block; /*truque para alinhar apenas um elemento */
+    margin: 0 auto;
+}
+.conteudo-principal-escrito-botao:hover{ /*da um efeito no botão ao passar o mouse em cima*/
+    background-color: rgba(174, 181, 182, 0.53);
+}
+
+
